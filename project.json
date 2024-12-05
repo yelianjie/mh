@@ -1,0 +1,32 @@
+{
+  "name": "梦幻脚本",
+  "main": "autoWebview.js",
+  "ignore": [
+      "dist",
+      "node_modules",
+      "public",
+      "src",
+      "type",
+      ".browserslistrc",
+      "babel.config.js",
+      "jsconfig.json",
+      ".gitignore",
+      "package.json",
+      "package-lock.json",
+      "yarn.lock",
+      "vue.config.js",
+      "README.md",
+      "images",
+      "tsconfig.json",
+      "postcss.config.js",
+      "util.js"
+  ],
+  "libs": [
+    "libmlkit_google_ocr_pipeline.so",
+    "libjackpal-androidterm5.so",
+    "libjackpal-termexec2.so"
+  ],
+  "packageName": "com.menghuanjiaoben",
+  "versionName": "0.7.0",
+  "versionCode": 1
+}

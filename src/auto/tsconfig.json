@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../node_modules/@autojs"
+    ],
+    "allowJs": true, 
+  },
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
+}
