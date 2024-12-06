@@ -25,4 +25,4 @@ app.use(vant)
 app.mount('#app')
 
 document.querySelector('#AppLoading').style.display = 'none'
-
+console.log('app启动完成')
