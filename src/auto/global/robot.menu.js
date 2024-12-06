@@ -33,7 +33,7 @@ if (!global.floatyWindow) {
       </vertical>
     )
 
-    floatyWindow.setPosition(0, device.height / 2 - 600)
+    floatyWindow.setPosition(0, device.height / 2 - 930)
 
     floatyWindow.stop.click(() => {
       toastLog('停止脚本!')
