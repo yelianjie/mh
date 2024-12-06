@@ -33,7 +33,29 @@ if (!global.floatyWindow) {
       </vertical>
     )
 
-    floatyWindow.setPosition(0, device.height / 2 - 930)
+  wx = 0;
+  wy = device.height / 2 - 600;
+  floatyWindow.setPosition(wx, wy)
+  
+  floatyWindow.start.setOnTouchListener(function (view, event) {
+    switch (event.getAction()) {
+          case event.ACTION_DOWN:
+              X = event.getRawX();
+              Y = event.getRawY();
+              return true;
+          case event.ACTION_MOVE:
+              x = event.getRawX() - X;
+              y = event.getRawY() - Y;
+              floatyWindow.setPosition(wx + x, wy + y);
+              return true;
+          case event.ACTION_UP:
+              wx += x;
+              wy += y;
+              return true;
+      }
+      return true;
+    });
+
 
     floatyWindow.stop.click(() => {
       toastLog('停止脚本!')
